@@ -4,14 +4,17 @@ A MATLAB implementation of [Robust Learning of Fixed-Structure Bayesian Networks
 Explanation of Files
 ===
 
-Our algorithms
+Our experiments (`filter` directory)
 ---
-
+* `filter_bn_sparse.m`: Synthetic experiments (Section 4.1).  Evaluate the performance of different algorithms (MLE, RANSAC, Filtering) when the graph structure of the ground-truth Bayes net is a random tree or a random graph.
+* `filter_bn_alarm.m`: Semi-synthetic experiments (Section 4.2).  Evaluate the performance of different algorithms when the ground-truth Bayes net is the ALARM network (see below for more details).
+* `empirical_bn.m`: Compute the empirical conditional probabilities of a known-structure Bayes net.
+* `dtv_bn.m`: Estimate the total variation distance between two Bayes nets that have the same structure (Appendix C.2).
 
 The ALARM Bayes net (`alarm` directory)
 ---
-* `alarm.bif`: The ALARM Bayes net from [The ALARM Monitoring System: A Case Study with Two Probabilistic Inference Techniques for Belief Networks](https://link.springer.com/chapter/10.1007/978-3-642-93437-7_28) in BIF format, downloaded from https://www.bnlearn.com/bnrepository/.
-* `parseBIF.cpp`: Parse `alarm.bif` and convert the multi-valued ALARM Bayes net into a binary one.  The binary Bayes net is used in `filterBN_ALARM.m`.
+* `alarm.bif`: The ALARM network from [The ALARM Monitoring System: A Case Study with Two Probabilistic Inference Techniques for Belief Networks](https://link.springer.com/chapter/10.1007/978-3-642-93437-7_28) in BIF format, downloaded from https://www.bnlearn.com/bnrepository.
+* `parseBIF.cpp`: Parse `alarm.bif` and convert the multi-valued ALARM network into binary-valued.  The binary Bayes net is used in `filterBN_ALARM.m`.
 
 Reference
 ===
