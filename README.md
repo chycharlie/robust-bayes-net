@@ -18,7 +18,7 @@ The ALARM Bayes net (`alarm` directory)
 
 Reference
 ===
-This repository is an implementation of the paper [Robust Learning of Fixed-Structure Bayesian Networks](https://arxiv.org/abs/1703.00893) appeared in NeurIPS 2018, authored by [Yu Cheng](https://homepages.math.uic.edu/~yucheng/), [Ilias Diakonikolas](http://www.iliasdiakonikolas.org/), [Daniel M. Kane](https://cseweb.ucsd.edu/~dakane/), and [Alistair Stewart](http://www.alistair-stewart.com/).
+This repository is an implementation of the paper [Robust Learning of Fixed-Structure Bayesian Networks](https://arxiv.org/abs/1703.00893) which appeared in NeurIPS 2018, authored by [Yu Cheng](https://homepages.math.uic.edu/~yucheng/), [Ilias Diakonikolas](http://www.iliasdiakonikolas.org/), [Daniel M. Kane](https://cseweb.ucsd.edu/~dakane/), and [Alistair Stewart](http://www.alistair-stewart.com/).
 
 ```
 @inproceedings{ChengDKS18,
