@@ -145,7 +145,7 @@ for eps = 0.05:0.05:0.5
     end
     fprintf('d = %d, m = %d, eps = %f\n', d, m, eps); 
     
-    % Take N samples from the ground-truth BN.
+    % Take (1-eps)*N samples from the ground-truth BN.
     N = 10^6;
     X = zeros(round((1-eps)*N), d);
     k = 0;
