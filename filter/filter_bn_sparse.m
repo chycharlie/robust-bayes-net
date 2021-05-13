@@ -56,7 +56,7 @@ for target_m = 100:100:1000
         end
         fprintf('d = %d, m = %d, itr = %d\n', d, m, itr);
 
-        % Take N samples from the ground-truth BN.
+        % Take (1-eps)*N samples from the ground-truth BN.
         % This implementation is much faster than looping over N.
         N = 10*floor(m / eps^2);
         X = zeros(round((1-eps)*N), d);
