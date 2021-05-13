@@ -1,7 +1,6 @@
 % Compute the empirical conditional probabilities of a known-structure Bayes net.
 % Input: the graph structure (parent) and the samples (X).
 % Output: the empirical conditional probability table (p).
-% This function is randomized.
 
 function [p] = empirical_bn(parent, X)
     % N = number of samples, d = number of variables, m = size of conditional probability table.
