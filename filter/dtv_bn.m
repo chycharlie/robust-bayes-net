@@ -1,6 +1,7 @@
 % Estimate the total variation distance (via sampling) between two Bayes nets P and Q that share the same structure.
 % Input: the common graph structure (parent) and two conditional probability tables (p and q).
 % Output: the estimated total variation distance.
+% This function is randomized.
 
 function [dtv] = dtv_bn(parent, p, q)
     % d_TV(p, q) = p(A) - q(A), where A = {x: p(x) > q(x)}.
