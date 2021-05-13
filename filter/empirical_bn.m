@@ -19,7 +19,6 @@ function [p] = empirical_bn(parent, X)
     k = 0;
     for i = 1:d
         for j = 1:2^deg(i)
-            % parent_config = 
             parent_config = dec2bin(j-1, deg(i)) - '0';
             % cnt01 = the number of times that [parent(i) = j] occurred in X.
             if (deg(i) == 0)
