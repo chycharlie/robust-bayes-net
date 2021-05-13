@@ -11,7 +11,7 @@ function [p] = empirical_bn(parent, X)
     m = 0;
     for i = 1:d
         deg(i) = numel(parent{i});
-        m = m + deg(i);
+        m = m + 2^deg(i);
     end
     
     % Compute p.
